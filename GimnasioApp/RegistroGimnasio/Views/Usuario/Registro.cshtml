@@ -1,0 +1,24 @@
+@model RegistroGimnasio.Models.Usuario
+
+<h2>Registro de Usuario</h2>
+
+<form asp-action="Registro" method="post">
+    <label>Nombre:</label>
+    <input asp-for="Nombre" /><br />
+
+    <label>Teléfono:</label>
+    <input asp-for="Telefono" /><br />
+
+    <label>Identificación:</label>
+    <input asp-for="Identificacion" /><br />
+
+    <label>Periodo (meses):</label>
+    <input asp-for="PeriodoMeses" type="number" /><br />
+
+    <button type="submit">Registrar</button>
+</form>
+
+@if (ViewBag.Mensaje != null)
+{
+    <p>@ViewBag.Mensaje</p>
+}

@@ -1,0 +1,25 @@
+@model List<RegistroGimnasio.Models.Usuario>
+
+<h2>Usuarios Registrados</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Teléfono</th>
+            <th>Identificación</th>
+            <th>Periodo (meses)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var usuario in Model)
+        {
+            <tr>
+                <td>@usuario.Nombre</td>
+                <td>@usuario.Telefono</td>
+                <td>@usuario.Identificacion</td>
+                <td>@usuario.PeriodoMeses</td>
+            </tr>
+        }
+    </tbody>
+</table>

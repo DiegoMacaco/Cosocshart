@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Bienvenido al sistema de registro del gimnasio</h1>
+
+<p>Haz clic en el botón para registrar un nuevo usuario:</p>
+
+
+<a class="btn btn-primary" asp-controller="Usuario" asp-action="Registro">Ir al Registro</a>
+
+<a class="btn btn-secondary" asp-controller="Usuario" asp-action="Lista">Ver Usuarios Registrados</a>
